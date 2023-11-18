@@ -6,6 +6,12 @@ as its operation is based on the existence of the `go.mod` file in the main dire
 
 ## Usage
 
+### Installation
+
+```shell
+go get github.com/flashlabs/rootpath
+```
+
 ### Tests Bootstrap
 
 Configure the test working directory to always be the project root directory. It doesn't matter whether you run tests
