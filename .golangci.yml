@@ -1,0 +1,54 @@
+run:
+  skip-dirs-use-default: false
+linters-settings:
+  govet:
+    enable-all: true
+    disable:
+      - shadow
+  godot:
+    capital: true
+  gofmt:
+    rewrite-rules:
+      - pattern: 'interface{}'
+        replacement: 'any'
+      - pattern: 'a[b:len(a)]'
+        replacement: 'a[b:]'
+  goimports:
+    local-prefixes: github.com/flashlabs
+  gci:
+    local-prefixes: github.com/flashlabs
+linters:
+  disable:
+    - scopelint
+    - godox
+    - gofumpt
+    - depguard
+    - revive
+  enable:
+    - testableexamples
+    - unparam
+    - asciicheck
+    - containedctx
+    - errname
+    - goconst
+    - ireturn
+    - nlreturn
+    - tenv
+    - testpackage
+    - usestdlibvars
+    - wastedassign
+    - whitespace
+    - wrapcheck
+    - wsl
+  presets:
+    - bugs
+    - comment
+    - error
+    - format
+    - import
+    - metalinter
+    - performance
+    - sql
+issues:
+  exclude:
+    - IfElseChain
