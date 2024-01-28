@@ -11,8 +11,7 @@ import (
 func TestChdir(t *testing.T) {
 	assert.NoFileExists(t, "LICENSE")
 
-	err := manual.Chdir()
-	if err != nil {
+	if err := manual.Chdir(); err != nil {
 		panic(err)
 	}
 
