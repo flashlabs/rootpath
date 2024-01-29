@@ -46,17 +46,17 @@ package yours
 import (
 	"fmt"
 
-	"github.com/flashlabs/rootpath/manual"
+	"github.com/flashlabs/rootpath/location"
 )
 
 func main() {
-	if err := manual.Chdir(); err != nil {
-		fmt.Errorf("error while executing manual.Chdir: %w", err)
+	if err := location.Chdir(); err != nil {
+		fmt.Errorf("error while executing location.Chdir: %w", err)
 	}
 }
 ```
 
-See ["manual/chdir_test.go"](https://github.com/flashlabs/rootpath/blob/main/manual/chdir_test.go) for real life example.
+See ["location/chdir_test.go"](https://github.com/flashlabs/rootpath/blob/main/location/chdir_test.go) for real life example.
 
 ## Issues and Ideas
 
