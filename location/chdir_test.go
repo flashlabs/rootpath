@@ -1,17 +1,17 @@
-package manual_test
+package location_test
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/flashlabs/rootpath/manual"
+	"github.com/flashlabs/rootpath/location"
 )
 
 func TestChdir(t *testing.T) {
 	assert.NoFileExists(t, "LICENSE")
 
-	if err := manual.Chdir(); err != nil {
+	if err := location.Chdir(); err != nil {
 		panic(err)
 	}
 
