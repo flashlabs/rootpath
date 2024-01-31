@@ -33,6 +33,31 @@ e.g. `"assets/file.json"`, no matter where the test will be called from.
 
 See ["tests/rootpath_test.go"](https://github.com/flashlabs/rootpath/blob/main/tests/rootpath_test.go) for real life example.
 
+### Manual Initialization
+
+It is possible to manually chdir to `rootpath` with the `manual.Chdir()` function.
+
+All you need to do is to `NOT` `blank import` the `rootpath` package,
+but instead call `manual.Chdir()` when you want to:
+
+```go
+package yours
+
+import (
+	"fmt"
+
+	"github.com/flashlabs/rootpath/location"
+)
+
+func main() {
+	if err := location.Chdir(); err != nil {
+		fmt.Errorf("error while executing location.Chdir: %w", err)
+	}
+}
+```
+
+See ["location/chdir_test.go"](https://github.com/flashlabs/rootpath/blob/main/location/chdir_test.go) for real life example.
+
 ## Issues and Ideas
 
 If you have any questions or want to improve something, just submit 

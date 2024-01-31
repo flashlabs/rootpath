@@ -1,4 +1,4 @@
-package tests_test
+package test_test
 
 import (
 	"testing"
@@ -8,6 +8,6 @@ import (
 	_ "github.com/flashlabs/rootpath"
 )
 
-func TestRootpath(t *testing.T) {
+func TestRootpathBlankImport(t *testing.T) {
 	assert.FileExists(t, "LICENSE")
 }
