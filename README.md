@@ -35,10 +35,10 @@ See ["tests/rootpath_test.go"](https://github.com/flashlabs/rootpath/blob/main/t
 
 ### Manual Initialization
 
-It is possible to manually chdir to `rootpath` with the `manual.Chdir()` function.
+It is possible to manually chdir to `rootpath` with the `location.Chdir()` function.
 
 All you need to do is to `NOT` `blank import` the `rootpath` package,
-but instead call `manual.Chdir()` when you want to:
+but instead call `location.Chdir()` when you want to:
 
 ```go
 package yours
