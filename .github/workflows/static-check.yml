@@ -12,6 +12,6 @@ jobs:
         with:
           fetch-depth: 1
       - name: Static check
-        uses: dominikh/staticcheck-action@v1.3.0
+        uses: dominikh/staticcheck-action@v1.3.1
         with:
           version: "2023.1.6"
