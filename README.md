@@ -31,7 +31,7 @@ import (
 From now on you can load all files pointing to the rootpath from the root directory of your project, 
 e.g. `"assets/file.json"`, no matter where the test will be called from.
 
-See ["tests/rootpath_test.go"](https://github.com/flashlabs/rootpath/blob/main/tests/rootpath_test.go) for real life example.
+See ["test/rootpath_test.go"](https://github.com/flashlabs/rootpath/blob/main/test/rootpath_test.go) for real life example.
 
 ### Manual Initialization
 
